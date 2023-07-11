@@ -37,7 +37,7 @@ end
 
 def isogram?(string)
   original_length = string.length
-  string_array = string.downcase.split
+  string_array = split(string).downcase
   unique_length = string_array.uniq.length
   original_length == unique_length
 end
@@ -50,7 +50,7 @@ end
 # Once you find the error, fix it and get the test to pass
 
 def yell_greeting(string)
-  name = string
-  name = name.downcase
+  name = string.upcase
+#  name = name
   greeting = "WASSAP, #{name}!"
 end
